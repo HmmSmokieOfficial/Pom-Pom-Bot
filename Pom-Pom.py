@@ -15,17 +15,17 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Bot configuration
-API_ID = '26490815'
-API_HASH = 'b99d8504b8812f9ec395ec61c010ac32'
-BOT_TOKEN = '7766736578:AAF6jT-8uTt0MilCJL0Mt4dn_EbTIfLfibo'
-GROUP_INVITE_LINK = "https://t.me/+kFKe9YGKAQc1MzFl"
-TARGET_GROUP_ID = "-1002271142145"
-CHANNEL_USERNAME = 'BotCodeVerse'
-LOGGER_CHANNEL_ID = "-1001806351030"
+API_ID = os.getenv('API_ID', '')  
+API_HASH = os.getenv('API_HASH', '')
+BOT_TOKEN = os.getenv('BOT_TOKEN', '')
+GROUP_INVITE_LINK = os.getenv('GROUP_INVITE_LINK', '')
+TARGET_GROUP_ID = os.getenv('TARGET_GROUP_ID', '')
+CHANNEL_USERNAME = os.getenv('CHANNEL_USERNAME', '')
+LOGGER_CHANNEL_ID = os.getenv('LOGGER_CHANNEL_ID', '')
+MONGO_URL = os.getenv('MONGO_URL', '')
 GIF_STORE_FILE = 'gifstore.json'
 VIDEO_STORE_FILE = 'videostore.json'
 DELETE_DELAY = 600
-MONGO_URL = "mongodb+srv://Terabox:SmokieOfficial@cluster0.qmr4z.mongodb.net/Pom-Pom?retryWrites=true&w=majority&appName=Cluster0"
 
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client["Pom-Pom"]
