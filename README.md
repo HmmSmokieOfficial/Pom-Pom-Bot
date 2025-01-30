@@ -62,7 +62,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🤖 ᴘᴏᴍ-ᴘᴏᴍ ʙᴏᴛ</h1>
+        <h1>🤖 Pom-Pom Bot</h1>
         <p>A powerful Telegram bot for managing and sharing media content with advanced features and user management capabilities.</p>
 
         <h2>🌟 Features</h2>
