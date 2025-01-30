@@ -55,7 +55,7 @@ MONGO_URL = "your_mongodb_url"
 ## 🚀 Running the Bot
 
 ```bash
-python bot.py
+python Pom-Pom.py
 ```
 
 ## 📚 Bot Commands
