@@ -3,6 +3,7 @@ import hashlib
 import uuid
 import json
 import os
+from dotenv import load_dotenv
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import UserNotParticipant
