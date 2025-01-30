@@ -114,4 +114,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For support, join our [Telegram Group](https://t.me/BotCodeVerse) or create an issue in the repository.
 
 ---
-Made with ❤️ by [Saurabh Singh]
+Made with ❤️ by [Saurabh Singh](https://t.me/Hmm_Smokie)
