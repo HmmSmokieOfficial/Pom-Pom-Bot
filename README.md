@@ -26,7 +26,7 @@ A powerful Telegram bot for managing and sharing media content with advanced fea
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pom-pom-bot.git
+git clone https://github.com/HmmSmokieOfficial/Pom-Pom-Bot.git
 cd pom-pom-bot
 ```
 
