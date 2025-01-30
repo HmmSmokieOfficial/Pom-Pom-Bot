@@ -1,7 +1,3 @@
-<h1 align="center">
-  <a href="https://telegram.me/BotCodeVerse">ᴘᴏᴍ-ᴘᴏᴍ ʙᴏᴛ</a>
-</h1>
-<img src="https://cdn.glitch.global/115a68e3-597e-445c-9598-4db19dfe4ccb/BotCodeVerse.gif?v=1738204676642"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
