@@ -3,6 +3,7 @@
 </h1>
 A powerful Telegram bot for managing and sharing media content with advanced features and user management capabilities.
 <img src="https://cdn.glitch.global/115a68e3-597e-445c-9598-4db19dfe4ccb/BotCodeVerse.gif?v=1738204676642"/>
+
 ## 🌟 Features
 
 * 📱 Supports multiple media types (videos, GIFs, animations)
