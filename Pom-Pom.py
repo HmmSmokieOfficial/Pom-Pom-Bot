@@ -4,6 +4,7 @@ import uuid
 import json
 import os
 from dotenv import load_dotenv
+from dotenv import load_dotenv
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import UserNotParticipant
@@ -15,15 +16,18 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+load_dotenv()
+
 # Bot configuration
-API_ID = os.getenv('API_ID', '')  
-API_HASH = os.getenv('API_HASH', '')
-BOT_TOKEN = os.getenv('BOT_TOKEN', '')
-GROUP_INVITE_LINK = os.getenv('GROUP_INVITE_LINK', '')
-TARGET_GROUP_ID = os.getenv('TARGET_GROUP_ID', '')
-CHANNEL_USERNAME = os.getenv('CHANNEL_USERNAME', '')
-LOGGER_CHANNEL_ID = os.getenv('LOGGER_CHANNEL_ID', '')
-MONGO_URL = os.getenv('MONGO_URL', '')
+API_ID = os.getenv("API_ID")
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+GROUP_INVITE_LINK = os.getenv("GROUP_INVITE_LINK")
+TARGET_GROUP_ID = int(os.getenv("TARGET_GROUP_ID"))
+ADMIN_USER_IDS = list(map(int, os.getenv("ADMIN_USER_IDS").split(",")))
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME")
+LOGGER_CHANNEL_ID = int(os.getenv("LOGGER_CHANNEL_ID"))
+MONGO_URL = os.getenv("MONGO_URL")
 GIF_STORE_FILE = 'gifstore.json'
 VIDEO_STORE_FILE = 'videostore.json'
 DELETE_DELAY = 600
@@ -31,11 +35,6 @@ DELETE_DELAY = 600
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client["Pom-Pom"]
 users_collection = db["users"]
-
-# Add list of admin user IDs
-ADMIN_USER_IDS = [
-    1949883614
-]
 
 # Create Pyrogram client
 app = Client("video_share_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
